@@ -1,5 +1,6 @@
 import SwiftUI
 import Combine
+import Foundation
 
 struct ClockTickerModel {
     enum TickerType {
