@@ -70,11 +70,9 @@ struct ContentView: View {
                                 SettingView()
                             }
                         } else if appname == "Browser" {
-                            NavigationView {
-                                BrowserPage()
-                                    .padding(.bottom, 30)
-                                    .preferredColorScheme(.dark)
-                            }
+                            BrowserPage()
+                                .padding(.bottom, 30)
+                                .preferredColorScheme(.dark)
                         } else if appname == "Calculator" {
                             CalcView().environmentObject(GlobalEnvironment())
                         } else {

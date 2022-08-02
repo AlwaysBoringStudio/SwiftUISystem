@@ -50,6 +50,25 @@ struct aboutView: View {
     }
 }
 
+struct developer: View {
+    var body: some View {
+        NavigationView {
+            List {
+                Section(header: Text("TOOLS")) {
+                    Button("View source code") {
+                        guard let url = URL(string: "https://github.com/AlwaysBoringStudio/SwiftUISystem/find/main") else { return }
+                        UIApplication.shared.open(url)
+                    }
+                    
+                }
+                
+            }
+            .navigationTitle("Developer options")
+   
+        }
+    }
+}
+
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
         SettingView()
